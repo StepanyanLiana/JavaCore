@@ -1,7 +1,5 @@
 package chapter3;
 
-import com.sun.xml.internal.ws.addressing.WsaActionUtil;
-
 public class BoolTest {
     public static void main(String[] args) {
         boolean b;
