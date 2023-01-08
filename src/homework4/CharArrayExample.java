@@ -6,8 +6,7 @@ public class CharArrayExample {
         char[] chars = {'j', 'a', 'v', 'a', 'l', 'o', 'v', 'e'};
         char c = 'o';
         int k = 0;
-        int i;
-        for (i = 0; i < chars.length; i++) {
+        for (int i = 0; i < chars.length; i++) {
             if (chars[i] == 'o') {
                 k++;
             }
@@ -23,19 +22,15 @@ public class CharArrayExample {
 
         System.out.print("3) ");
         char[] chars3 = {'j', 'a', 'v', 'a', 'l', 'o', 'l', 'y'};
-        boolean b = true;
-        if ((chars3.length - 1 == 'y') && (chars3.length - 2 == 'l')) {
-            b = false;
-        }
+        System.out.println( (chars3[chars3.length - 1] == 'y') && (chars3[chars3.length - 2] == 'l'));
 
-            System.out.println(b);
+
+
 
             System.out.print("4) ");
             char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
-            int j;
-            for (j = 0; j < text.length; j++) {
+            for (int j = 0; j < text.length; j++) {
                 if (text[j] != ' ') {
-
                     System.out.print(text[j]);
                 }
             }

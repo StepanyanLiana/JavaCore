@@ -59,13 +59,13 @@ public class ArrayUtil {
         System.out.print("odd elements: ");
                 int odd = 0;
                 for (i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 1){
-                odd = odd + 1;
-                    System.out.print(array[i] + " ");
-            }
-        }
-        System.out.println();
-        System.out.println(odd);
+                    if (array[i] % 2 == 1) {
+                        odd = odd + 1;
+                        System.out.print(array[i] + " ");
+                    }
+                }
+                System.out.println();
+                System.out.println(odd);
 
+                }
     }
-}
