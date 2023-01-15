@@ -19,7 +19,7 @@ public class ArraySort {
         }
 
         System.out.println();
-        System.out.print("in oscending order: ");
+        System.out.print("in ascending order: ");
         for (int i = 1; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length; j++) {
                 if(numbers[i] < numbers[j]){

@@ -17,7 +17,7 @@ public class CharArrayExample {
         System.out.print("2) ");
         char[] chars2 = {'j', 'a', 'v', 'a', 'l', 'o', 'v', 'e'};
         System.out.print(chars2[(chars2.length - 1) / 2] + ", ");
-        System.out.println(chars2[chars.length / 2]);
+        System.out.println(chars2[chars2.length / 2]);
 
 
         System.out.print("3) ");

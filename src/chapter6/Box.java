@@ -4,8 +4,29 @@ public class Box {
     double width;
     double height;
     double depth;
-    void volume() {
-        System.out.print("Введение в методы ");
-        System.out.println(width * depth * height);
+
+
+    Box() {
+        System.out.println("Koнcтpyиpoвaниe объекта Вох");
+        width = 10;
+        height = 10;
+        depth = 10;
     }
+
+    double volume() {
+        return width * depth * height;
+    }
+
+    void setDim(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+    }
+
+    Box (double w, double h, double d) {
+        width = w;
+        depth = d;
+        height = h;
+    }
+
 }
