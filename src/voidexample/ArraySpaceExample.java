@@ -20,7 +20,7 @@ public class ArraySpaceExample {
         }
         char[] result = new char[(endIndex - startIndex) + 1];
         int j = 0;
-        for (int i = startIndex; i <= endIndex; i++) {
+        for (int i = startIndex; i <= endIndex; i++ ) {
             result[j++] = c[i];
         }
         for (int i = 0; i < result.length; i++){

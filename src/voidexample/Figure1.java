@@ -1,4 +1,4 @@
-package chapter8;
+package voidexample;
 
 public class Figure1 {
     public static void main(String[] args) {
