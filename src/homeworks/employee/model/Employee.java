@@ -1,4 +1,6 @@
-package homeworks.employee;
+package homeworks.employee.model;
+
+import homeworks.employee.util.DateUtil;
 
 import java.util.Date;
 import java.util.Objects;
@@ -8,42 +10,27 @@ public class Employee {
     private String surname;
     private String employeeID;
     private double salary;
-    private String company;
+    private Company company;
     private String position;
     private boolean active = true;
     private Date dateOfBirthday;
-    private Date registerDate = new Date();
+    private Date registerDate;
 
 
     public Employee() {
     }
 
 
-    public Employee(String name, String surname, String employeeID, double salary, String company, String position, boolean active, Date dateOfBirthday) {
+    public Employee(String name, String surname, String employeeID, double salary,Company company, String position, Date registerDate, Date dateOfBirthday) {
         this.name = name;
         this.surname = surname;
         this.employeeID = employeeID;
         this.salary = salary;
         this.company = company;
         this.position = position;
-        this.active = active;
         this.dateOfBirthday = dateOfBirthday;
         this.registerDate = registerDate;
     }
-
-    public Employee(String name, String surname, String employeeID, double salary, String company,
-                    String position, Date dateOfBirthday) {
-        this.name = name;
-        this.surname = surname;
-        this.employeeID = employeeID;
-        this.salary = salary;
-        this.company = company;
-        this.position = position;
-        this.dateOfBirthday = dateOfBirthday;
-
-    }
-
-
 
     public String getName() {
         return name;
@@ -78,10 +65,10 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getCompany() {
+    public Company getCompany() {
         return company;
     }
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 
@@ -129,8 +116,8 @@ public class Employee {
                 ", company='" + company + '\'' +
                 ", position='" + position + '\'' +
                 ", active=" + active +
-                ", dateOfBirthday=" + dateOfBirthday +
-                ", registerDate=" + registerDate +
+                ", dateOfBirthday=" + DateUtil.dateToString(dateOfBirthday) +
+                ", registerDate=" + DateUtil.dateToString(registerDate) +
                 '}';
     }
 

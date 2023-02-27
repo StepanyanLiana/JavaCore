@@ -1,5 +1,4 @@
 package chapter8.extendss;
-
 public class A {
     int i;
     private int j;

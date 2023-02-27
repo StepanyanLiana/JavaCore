@@ -28,13 +28,18 @@ public class Mixer {
         System.out.println(a[a.length - 1]);
         System.out.println(a[a.length - 2]);
         int u = 0;
-        for (int i = 0; i < a.length; i++) {
+        for (int y = 0, i = 0; i < a.length; i++) {
             if (a[i] % 2 != 0) {
                 u = a[i];
                 System.out.println(u);
             }
         }
     }
-        }
+}
+
+
+
+
+
 
 

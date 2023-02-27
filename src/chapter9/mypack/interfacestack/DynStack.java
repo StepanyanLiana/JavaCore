@@ -20,6 +20,7 @@ public class DynStack implements IntStack {
         } else {
             stck[++tos] = item;
         }
+
     }
 
     public int pop() {
