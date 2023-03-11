@@ -70,7 +70,7 @@ public class MedicalCenterDemo implements Command {
         Doctor doctor = personStorage1.getDoctorById(id);
         if (doctor != null) {
             try {
-                System.out.println("please input id,name,surname,phone number,doctor,register date time(dd/MM/yyyy HH:mm)");
+                System.out.println("please input id,name,surname,phone number,register date time(dd/MM/yyyy HH:mm)");
                 String data = scanner.nextLine();
                 String[] dataStr = data.split(",");
                 Date registerDateTime = DateUtil.stringToDateTime(dataStr[4]);
@@ -80,7 +80,7 @@ public class MedicalCenterDemo implements Command {
                     patient.setName(dataStr[1]);
                     patient.setSurename(dataStr[2]);
                     patient.setPhoneNumber(dataStr[3]);
-                    patient.setRegisterDateTime(DateUtil.stringToDateTime(String.valueOf(registerDateTime)));
+                    patient.setRegisterDateTime(registerDateTime);
                     patient.setDoctor(doctor);
                     personStorage1.add(patient);
                     System.out.println("patient registered");
@@ -135,7 +135,7 @@ public class MedicalCenterDemo implements Command {
                doctorById.setSurename(dataStr[1]);
                doctorById.setPhoneNumber(dataStr[2]);
                doctorById.setEmail(dataStr[3]);
-               doctorById.setProfession(dataStr[4]);
+               doctorById.setProfession(Profession.valueOf(dataStr[4]));
                 System.out.println("doctor was updated!");
                } catch (IllegalArgumentException e) {
                    System.out.println("wrong profession");

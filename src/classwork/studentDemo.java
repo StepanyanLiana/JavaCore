@@ -11,7 +11,7 @@ public class studentDemo {
         String phoneNumber = scanner.nextLine();
         System.out.println("Please input student's course name");
         String courseName = scanner.nextLine();
-        Student student = new Student(name, phoneNumber, courseName);
+        //Student student = new Student(name, phoneNumber, courseName);
         System.out.println("Student registered!");
     }
 }

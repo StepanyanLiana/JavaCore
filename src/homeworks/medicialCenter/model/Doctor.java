@@ -29,8 +29,8 @@ public class Doctor extends Person {
         return profession;
     }
 
-    public void setProfession(String profession) {
-        this.profession = Profession.valueOf(profession);
+    public void setProfession(Profession profession) {
+        this.profession = profession;
     }
 
     @Override

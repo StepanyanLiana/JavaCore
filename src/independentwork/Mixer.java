@@ -33,9 +33,38 @@ public class Mixer {
                 u = a[i];
                 System.out.println(u);
             }
+
         }
-    }
-}
+        class A {
+            public final int getResult(int a, int b) {
+                return 0;
+            }
+        }
+
+        class B extends A {
+            public int getReтsult(int a, int b) {
+                return 1;
+            }
+        }
+
+         class Test {
+            public static void main(String args[]) {
+                B b = new B();
+                System.out.println("x = " + b.getResult(0, 1));
+            }int ____s = 7;
+            boolean[] b[];
+            long[] g[];
+        }
+        class Toy {
+            public String printName() {
+                System.out.println("Toy");
+            return "h";}
+
+        }
+
+
+            }
+        }
 
 
 
