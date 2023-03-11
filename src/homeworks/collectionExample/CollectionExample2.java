@@ -17,10 +17,9 @@ public class CollectionExample2 {
 
         System.out.println("please input 10 name");
         String sortName = scanner.nextLine();
-        String[] split = sortName.split(",");
+        String[] sortNames = sortName.split(",");
         Set<String> name = new TreeSet<>();
-        name.add(sortName);
-        //name.addAll(Collections.singleton(sortName));
+        name.addAll(List.of(sortNames));
         for (String s : name) {
             System.out.println(s);
         }
