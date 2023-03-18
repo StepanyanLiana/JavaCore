@@ -1,6 +1,6 @@
 package classwork.generic;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private String surname;
     private int age;
@@ -46,5 +46,10 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return name.compareTo(o.name);
     }
 }

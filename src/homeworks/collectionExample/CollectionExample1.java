@@ -1,11 +1,12 @@
 package homeworks.collectionExample;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CollectionExample1 {
     static Scanner scanner = new Scanner(System.in);
-    static ArrayList<String> name = new ArrayList<>();
+    static List<String> name = new ArrayList<>();
     public static void main(String[] args) {
 
         name.add("Liana");

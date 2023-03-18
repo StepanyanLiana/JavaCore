@@ -54,6 +54,7 @@ public class Mixer {
             }int ____s = 7;
             boolean[] b[];
             long[] g[];
+
         }
         class Toy {
             public String printName() {
