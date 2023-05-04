@@ -45,6 +45,7 @@ public class Mixer {
             public int getReтsult(int a, int b) {
                 return 1;
             }
+            
         }
 
          class Test {

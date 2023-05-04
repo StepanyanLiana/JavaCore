@@ -14,7 +14,7 @@ public class CollectionExample1 {
         name.add("Ani");
         name.add("Lilit");
         name.add("Meri");
-        searchName();
+        isName();
         deleteName();
         inputName();
 
@@ -40,17 +40,17 @@ public class CollectionExample1 {
         }
     }
 
-    private static String searchName() {
+    private static boolean isName() {
         System.out.println("please input name");
        String name1 = scanner.nextLine();
        for (String n : name) {
          if (n.equals(name1)) {
                System.out.println("the name is in the list");
-              return name1;
+              return true;
          }
        }
        System.out.println("the name is not in the list");
-       return null;
+       return false;
    }
 
     }
